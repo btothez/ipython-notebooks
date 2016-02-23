@@ -1,0 +1,59 @@
+I - EARLYBIRD NETWORK DYNAMICS
+
+* Description of Vector (2D) - 
+X1 = wealth [5, 
+X2 = looks	10]
+
+
+* We always go back to 2d for intuitive explanations
+
+* Walking around in a vector space...
+
+* What if we could turn those numbers into another 2D vector space - where you'll be in 10 years. 
+
+ 1 2
+-3 1
+
+* Show network dynamics at a glance
+
+* Transpose and normalize chat matrix, so columns sum to one. Each row is how much of a person's love you get from each person.
+
+* Draw picture of transformation of following 2d space - explain eigenvalues
+	- Backbone of the space
+	- Ellipses
+
+* The idea of one person comes in with 1 unit of chat love and it eventually gets spread around. 
+
+* Example of matrix with non-complex eigenvalues
+
+>>> np.linalg.eig(np.array([[1,2],[5,-1]]))
+(array([ 3.31662479, -3.31662479]), array([[ 0.65348485, -0.42039403],
+       [ 0.7569396 ,  0.90734164]]))
+
+* Explain distances (pythagorean, manhattan)
+
+* Dendogram, clustering of our chatting habits
+
+
+
+II - IMAGE SVD, 
+
+* What we were really doing in the last example was multiplying a matrix by itself many times.
+Matrix multiplication is an abstract concept. So is matrix factorization.
+
+* SVD - 
+	1. How much information is kept in the first few eigenvalues
+	2. This is one type of Dimensionality reduction
+
+* What information can we reduce? 
+
+III - LATENT SEMANTIC ANALYSIS
+
+* The missing element is how words connect to invisible concepts
+
+* The first eigenvalue is the first concept 
+
+* Signal vs. Noise - later concepts are noisier
+
+
+
